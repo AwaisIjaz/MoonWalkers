@@ -1,0 +1,18 @@
+<div class="container pad-top">
+  <a ui-sref="newMoonWalkers" class="btn-primary btn-lg nodecoration">Add New Astronaut</a>
+  <table class="table moonwalkerstable">
+      <tr>
+          <td><h3>All Astronauts who walked on the Moon</h3></td>
+          <td></td>
+      </tr>
+      <tr ng-repeat="moonwalkers in moonwalkers">
+          <td>{{moonwalkers.name}}</td>
+          <td>{{moonwalkers.description}}</td>
+          <td>{{moonwalkers.yearDiscovered}}</td>
+          <td>
+              <a class="btn btn-primary" ui-sref="viewMoonwalkers({id:moonwalkers.id})">View</a>
+              <a class="btn btn-danger"  ng-click="deleteMoonWalkers(moonwalkers)">Delete</a>
+          </td>
+      </tr>
+  </table>
+</div>

@@ -1,0 +1,27 @@
+<div class="container pad-top">
+  <table class="table moonwalkerstable">
+      <tr>
+          <td><h3>Details for {{moonwalkers.name}}</h3></td>
+          <td></td>
+      </tr>
+      <tr>
+          <td>Name</td>
+          <td>{{moonwalkers.name}}</td>
+      </tr>
+      <tr>
+          <td>Description</td>
+          <td>{{moonwalkers.description}}</td>
+      </tr>
+      <tr>
+          <td>Mission</td>
+          <td>{{moonwalkers.mission}}</td>
+      </tr>
+      <tr>
+          <td>Age of Astronaut</td>
+          <td>{{moonwalkers.ageAtFirstStep}}</td>
+      </tr>
+  </table>
+  <div>
+      <a class="btn btn-primary" ui-sref="editMoonWalkers({id:moonwalkers.id})">Edit</a>
+  </div>
+</div>
